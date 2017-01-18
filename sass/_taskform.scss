@@ -1,0 +1,47 @@
+
+.task-form, .task-form-list {
+  display: block;
+  height: 100%;
+  background-color: #6596a1;
+}
+
+.task-form__item {
+  display: block;
+  text-align: center;
+}
+
+.task-form__label {
+  display: inline-block;
+  width: 140px;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#form-submit {
+  margin-top: 20px;
+}
+
+#task-form__workload {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+#task-form__remaining-days {
+  width: $width-form;
+  text-align: center;
+  padding: 10px;
+}
+
+#task-form__lecture {
+  min-width: $width-form;
+}
+
+select {
+  color: black;
+  background-color: $color-white;
+  padding: 3px;
+  min-width: 60%;
+  width: auto;
+}

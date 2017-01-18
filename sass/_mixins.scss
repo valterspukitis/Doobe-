@@ -1,0 +1,9 @@
+@mixin blockdesign {
+  font-family: 'Avenir', sans-serif;
+  display: block;
+  padding: 20px;
+  border-bottom: 2px solid $color-white;
+  background-color: $color-item;
+  cursor: pointer;
+}
+

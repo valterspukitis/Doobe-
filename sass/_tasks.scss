@@ -1,0 +1,42 @@
+.task__description {
+  float: left;
+}
+
+.task__decription__time {
+  padding-top: 5px;
+  font-size: 0.9em;
+}
+
+.task__decription__title {
+  display: block;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $color-white;
+}
+
+.task__xp, .task__edit {
+  float: right;
+  width: 32px;
+  padding: 15px 0;
+  text-align: end;
+}
+
+.task-form__workload__number {
+  margin: 2px;
+  padding: 4px 0;
+  height: 30px;
+  width: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &.selected {
+    background-color: $color-dark;
+  }
+}
+
+.task {
+  @include blockdesign;
+  height: 90px;
+}

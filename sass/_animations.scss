@@ -1,0 +1,20 @@
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(-6deg) translate(-50%, -50%);
+  }
+  50% {
+    -webkit-transform: rotate(6deg) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: rotate(-6deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes level-up {
+  From {
+    -webkit-transform: perspective(400px) rotateX(0deg)
+  }
+  To {
+    -webkit-transform: perspective(400px) rotateX(360deg)
+  }
+}

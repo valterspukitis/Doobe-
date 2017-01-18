@@ -1,0 +1,20 @@
+<div class="top-bar"><a href="/"><i class="fa fa-arrow-left icon"></i></a></div>
+
+<section class="items lectures">
+    <div class="lecture default">
+        <p class="lecture__name">General</p>
+    </div>
+
+    {{#each lectures}}
+        <div class="lecture" data-id={{this._id}}>
+            <p class="lecture__name">{{this.name}}</p>
+        </div>
+    {{/each}}
+</section>
+
+<form class="lecture-form">
+    <input type="text" id="lecture-name" placeholder="Add a new lecture..." autocomplete="off" required>
+    <button class="lecture-add" type="submit">
+        <i class="fa fa-check icon"></i>
+    </button>
+</form>

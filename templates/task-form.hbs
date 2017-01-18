@@ -1,0 +1,42 @@
+<div class="top-bar"><a href="/"><i class="fa fa-arrow-left icon"></i></a></div>
+
+<form class="task-form">
+    <div class="task-form__item">
+        <label for="task-form__name" class="task-form__label">Name</label>
+        <input type="text" id="task-form__name" placeholder="Name of the task..." autocomplete="off" required>
+    </div>
+
+    <div class="task-form__item">
+        <label for="task-form__remaining-days" class="task-form__label">Days</label>
+        <input type="number" id="task-form__remaining-days" min="-3" max="21" value="3" required>
+    </div>
+
+    <div class="task-form__item">
+        <label class="task-form__label">Workload</label>
+        <div>
+            <div id="task-form__workload">
+                <span class="task-form__workload__number">1</span>
+                <span class="task-form__workload__number">2</span>
+                <span class="task-form__workload__number selected">3</span>
+                <span class="task-form__workload__number">5</span>
+                <span class="task-form__workload__number">8</span>
+                <span class="task-form__workload__number">13</span>
+                <span class="task-form__workload__number">21</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="task-form__item">
+        <label for="task-form__lecture" class="task-form__label">Lecture</label>
+        <select id="task-form__lecture">
+            <option data-id="general">General</option>
+            {{#each lectures}}
+                <option data-id="{{this._id}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+
+    <div class="task-form__item">
+        <input type="submit" id="form-submit" value="Save task">
+    </div>
+</form>

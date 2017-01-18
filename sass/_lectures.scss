@@ -1,0 +1,49 @@
+.lecture {
+  height: auto;
+
+  &__name {
+    text-transform: uppercase;
+  }
+}
+
+.lectures {
+  margin-bottom: 112px;
+}
+
+#lecture-name {
+  font-family: 'Avenir', sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 8px 16px;
+  text-align: left;
+  width: 67%;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.lecture-add {
+  //padding: 20px;
+  border-radius: 0;
+  float: right;
+  text-align: center;
+  padding: 4px 0;
+  width: 33%;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.lecture-form {
+  background-color: $color-wrapper-control;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  bottom: 56px;
+  height: 56px;
+  padding: 8px 0;
+}
+
+.lecture {
+  @include blockdesign;
+}
